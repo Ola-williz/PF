@@ -76,17 +76,8 @@ Each project card includes:
 
 🔗 Link to Live Demo or Case Study
 
-📮 Contact
-Let's collaborate and bring your ideas to life!
-
-📧 Email: asakeolaoluwa33@gmail.com
-
-📱 Phone: +234 916 926 4298
-
-📍 Location: Lagos, Nigeria
 
 🔗 LinkedIn: linkedin.com/in/olaoluwa-asake
 
 🐦 X/Twitter: @Ola_Dev_Design
 
-💻 GitHub: github.com/CreativeOlaoulwa
