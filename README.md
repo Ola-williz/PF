@@ -31,7 +31,7 @@ This project is built with **HTML**, **Tailwind CSS**, and **Vanilla JavaScript*
 ## ✨ Features
 
 - ⚡ **Responsive Design** – Fully optimized for all screen sizes  
-- 🎨 **Tailwind CSS** – Utility-first CSS framework for fast styling  
+- 🎨 **CSS** – Utility-first CSS framework for fast styling  
 - 🌙 **Theme-Aware Styling** – Dark/light mode compatible  
 - 🧭 **Smooth Scrolling Navigation**  
 - 🔀 **Tabbed Portfolio System** – Categorized project showcase  
@@ -42,7 +42,7 @@ This project is built with **HTML**, **Tailwind CSS**, and **Vanilla JavaScript*
 ## 🛠️ Tech Stack
 
 - **HTML5**
-- **Tailwind CSS**
+- **CSS**
 - **JavaScript (Vanilla)**
 - **Remix Icons**
 
@@ -55,3 +55,41 @@ This project is built with **HTML**, **Tailwind CSS**, and **Vanilla JavaScript*
 ```bash
 git clone https://github.com/CreativeOlaoulwa/portfolio-website.git
 cd portfolio-website
+
+## 📸 Portfolio Gallery
+
+Showcasing 3 key categories of work:
+
+### 🧱 Development Projects
+- React apps, dashboards, and e-commerce platforms  
+- Focused on performance, responsiveness, and functionality  
+
+### 🎨 Design Projects
+- UI/UX case studies, design systems, and website redesigns  
+- Emphasis on usability, accessibility, and visual storytelling  
+
+### ✍️ Writing Projects
+- Blog posts, brand voice documentation, and email campaigns  
+- Clear, concise, and results-driven communication
+
+---
+
+Each project card includes:
+- ✅ **Thumbnail Preview**
+- 📝 **Brief Description**
+- 🧩 **Tech Stack/Tools Used**
+- 🔗 **Link to Live Demo or Case Study**
+
+---
+
+## 📮 Contact
+
+Let's collaborate and bring your ideas to life!
+
+- 📧 **Email**: [asakeolaoluwa33@gmail.com](mailto:asakeolaoluwa33@gmail.com)  
+- 📱 **Phone**: +234 916 926 4298  
+- 📍 **Location**: Lagos, Nigeria  
+- 🔗 **LinkedIn**: [linkedin.com/in/olaoluwa-asake](https://www.linkedin.com/in/olaoluwa-asake)  
+- 🐦 **X/Twitter**: [@Ola_Dev_Design](https://x.com/Ola_Dev_Design)  
+- 💻 **GitHub**: [github.com/CreativeOlaoulwa](https://github.com/CreativeOlaoulwa)
+
