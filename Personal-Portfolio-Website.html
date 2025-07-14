@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olaoluwa Asake - Creative Professional Portfolio</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<script>
+// Set custom Tailwind CSS configuration
+tailwind.config = {
+  theme: {
+    extend: {
+      // 👉 Extend the default color palette with custom colors
+      colors: {
+        primary: '#3B82F6',   // Custom blue color (used for buttons, links, etc.)
+        secondary: '#8B5CF6'  // Custom purple color (used for highlights, accents, etc.)
+      },
+
+      // 👉 Extend the default border-radius options with custom sizes
+      borderRadius: {
+        'none': '0px',        // No rounding
+        'sm': '4px',          // Small rounding
+        DEFAULT: '8px',       // Default rounding if no size is specified (used by class: rounded)
+        'md': '12px',         // Medium rounding
+        'lg': '16px',         // Large rounding
+        'xl': '20px',         // Extra large
+        '2xl': '24px',        // 2 times extra large
+        '3xl': '32px',        // 3 times extra large
+        'full': '9999px',     // Fully rounded (used for circles, pills, etc.)
+        'button': '8px'       // Custom border-radius for buttons (matches DEFAULT)
+      },
+
+      // 👉 Add custom font families
+      fontFamily: {
+        'inter': ['Inter', 'sans-serif'] // Defines a shortcut "font-inter" for the Inter font
+      }
+    }
+  }
+}
+</script>
+
+
+</head>
+<body class="bg-white text-gray-900">
+<!-- Navigation -->
+<!-- 🔒 Fixed Top Navigation Bar -->
+<nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+  <!-- 🔲 Container: Centers content and adds responsive padding -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+    <!-- 📐 Flex container: Aligns items and spaces them horizontally -->
+    <div class="flex items-center justify-between h-16">
+
+      <!-- 🔤 Brand/Logo section -->
+      <div class="flex items-center">
+        <span class="text-2xl font-['Pacifico'] text-primary">
+          Olaoluwa Asake
+        </span>
+      </div>
+
+      <!-- 🖥️ Desktop navigation links (hidden on mobile) -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          <!-- 🔗 Navigation Links -->
+          <a href="#home" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">About</a>
+          <a href="#services" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Services</a>
+          <a href="#portfolio" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Portfolio</a>
+          <a href="#contact" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Contact</a>
+        </div>
+      </div>
+
+      <!-- 📱 Mobile menu button (only visible on small screens) -->
+      <div class="md:hidden">
+        <button id="mobile-menu-btn" class="w-8 h-8 flex items-center justify-center text-gray-700 hover:text-primary">
+          <i class="ri-menu-line text-xl"></i> <!-- Icon for hamburger menu -->
+        </button>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+<!-- 📱 Mobile Navigation Menu (hidden on medium screens and above) -->
+<div id="mobile-menu" class="mobile-menu md:hidden fixed top-16 left-0 w-full h-screen bg-white z-40">
+  
+  <!-- 📦 Menu Container with padding and vertical spacing between links -->
+  <div class="px-4 py-6 space-y-4">
+
+    <!-- 🔗 Mobile Nav Links -->
+    <a href="#home" class="block text-gray-700 hover:text-primary transition-colors duration-200 font-medium py-2">
+      Home
+    </a>
+    <a href="#about" class="block text-gray-700 hover:text-primary transition-colors duration-200 font-medium py-2">
+      About
+    </a>
+    <a href="#services" class="block text-gray-700 hover:text-primary transition-colors duration-200 font-medium py-2">
+      Services
+    </a>
+    <a href="#portfolio" class="block text-gray-700 hover:text-primary transition-colors duration-200 font-medium py-2">
+      Portfolio
+    </a>
+    <a href="#contact" class="block text-gray-700 hover:text-primary transition-colors duration-200 font-medium py-2">
+      Contact
+    </a>
+
+  </div>
+</div>
+
+<!-- 🦸‍♂️ Hero Section -->
+<section id="home" class="hero-bg min-h-screen flex items-center relative">
+
+  <!-- 🎨 Gradient overlay for background effect -->
+  <div class="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
+
+  <!-- 🧱 Main content wrapper with z-index to stay above overlay -->
+  <div class="relative z-10 w-full">
+
+    <!-- 🔲 Responsive container to center content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- 🔄 Flex layout for stacking on mobile and side-by-side on large screens -->
+      <div class="flex flex-col lg:flex-row items-center">
+
+        <!-- 📝 Left Column (Text + CTA Buttons + Social Links) -->
+        <div class="lg:w-1/2 text-center lg:text-left">
+
+          <!-- 👤 Profile Image -->
+          <div class="mb-26">
+            <img 
+              src="images/zoom full.jpg"
+              alt="Olaoluwa Asake"
+              class="w-32 h-32 rounded-full mx-auto lg:mx-0 mb-6 object-cover object-top shadow-lg"
+            >
+          </div>
+
+          <!-- 🗣️ Main Headline -->
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            Creative <span class="text-primary">Professional</span>
+          </h1>
+
+          <!-- 💼 Role Summary -->
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Frontend Developer • Product Designer • Copywriter
+          </p>
+
+          <!-- 📜 Short Bio/Intro -->
+          <p class="text-lg text-gray-700 mb-10 max-w-2xl">
+            I craft digital experiences that blend beautiful design, seamless functionality, and compelling storytelling. With expertise spanning development, design, and content creation, I help brands connect with their audiences through meaningful digital solutions.
+          </p>
+
+          <!-- 🚀 Call-to-Action Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a 
+              href="#portfolio" 
+              class="bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-blue-600 transition-colors duration-200 whitespace-nowrap"
+            >
+              View My Work
+            </a>
+            <a 
+              href="#contact" 
+              class="border-2 border-primary text-primary px-8 py-4 !rounded-button font-semibold hover:bg-primary hover:text-white transition-colors duration-200 whitespace-nowrap"
+            >
+              Get In Touch
+            </a>
+          </div>
+
+          <!-- 🔗 Social Media Icons -->
+          <div class="flex gap-6 mt-8 justify-center lg:justify-start">
+            <a 
+              href="https://www.linkedin.com/in/olaoluwa-asake/" 
+              class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors duration-200"
+            >
+              <i class="ri-linkedin-fill text-xl"></i>
+            </a>
+            <a 
+              href="https://github.com/CreativeOlaoulwa" 
+              class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors duration-200"
+            >
+              <i class="ri-github-fill text-xl"></i>
+            </a>
+            <a 
+              href="https://dribbble.com/olaoluwa-asake" 
+              class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors duration-200"
+            >
+              <i class="ri-dribbble-fill text-xl"></i>
+            </a>
+            <a 
+              href="https://x.com/Ola_Dev_Design" 
+              class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-primary transition-colors duration-200"
+            >
+              <i class="ri-twitter-fill text-xl"></i>
+            </a>
+          </div>
+
+        </div> <!-- End Left Column -->
+
+      </div> <!-- End Flex Row -->
+    </div> <!-- End Container -->
+  </div> <!-- End Relative Wrapper -->
+</section>
+<!-- End Hero Section -->
+
+<!-- 👤 About Section -->
+<section id="about" class="py-20 theme-aware-bg-gray">
+
+  <!-- 🔲 Container: Centers content and adds responsive padding -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- 📝 Section Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        A passionate creative professional with a unique blend of technical skills and design thinking
+      </p>
+    </div>
+
+    <!-- 🔄 Responsive 2-column layout -->
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- 🖼️ Left Column: Image -->
+      <div>
+        <img 
+          src="images/creative workspace.jpg"
+          alt="About Olaoluwa Asake"
+          class="rounded-2xl shadow-lg object-cover object-top w-full h-96"
+        >
+      </div>
+
+      <!-- 🧾 Right Column: About Text & Stats -->
+      <div class="space-y-6">
+
+        <!-- 📖 Subheading -->
+        <h3 class="text-2xl font-bold text-gray-900">My Journey</h3>
+
+        <!-- ✍️ Experience Paragraphs -->
+        <p class="text-gray-700 leading-relaxed">
+          With over 4 years of combined experience in digital design and development, I've had the privilege of working with diverse clients ranging from startups to established brands. My journey began in product design and user research, where I developed a deep understanding of user behavior and design psychology.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          This foundation led me to expand into frontend development, allowing me to bring designs to life with clean, efficient code. Recently, I've added copywriting to my skill set, recognizing the power of words in creating compelling user experiences.
+        </p>
+
+        <!-- 📊 Stats Section -->
+        <div class="grid grid-cols-2 gap-6 mt-8">
+          <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+            <div class="text-3xl font-bold text-primary mb-2">15+</div>
+            <div class="text-gray-600">Projects Completed</div>
+          </div>
+          <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+            <div class="text-3xl font-bold text-primary mb-2">12+</div>
+            <div class="text-gray-600">Happy Clients</div>
+          </div>
+        </div>
+
+        <!-- 📄 Resume Button -->
+        <div class="pt-6">
+          <a 
+            href="Olaoluwa Asake.pdf" 
+            class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 !rounded-button font-semibold hover:bg-blue-600 transition-colors duration-200 whitespace-nowrap"
+          >
+            <i class="ri-download-line"></i>
+            Download Resume
+          </a>
+        </div>
+
+      </div> <!-- End Right Column -->
+
+    </div> <!-- End Grid -->
+
+  </div> <!-- End Container -->
+</section>
+<!-- End About Section -->
+
+<!-- 🧰 Services Section -->
+<section id="services" class="py-20 theme-aware-bg-white">
+
+  <!-- 🔲 Responsive container to center and pad content -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- 📝 Section Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Services & Expertise</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Comprehensive digital solutions combining design, development, and content strategy
+      </p>
+    </div>
+
+    <!-- 📦 Grid layout for service cards (3 columns on medium+ screens) -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- 💻 Frontend Development Card -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+
+        <!-- 🧩 Icon box -->
+        <div class="w-16 h-16 flex items-center justify-center bg-blue-100 rounded-xl mb-6">
+          <i class="ri-code-s-slash-line text-2xl text-primary"></i>
+        </div>
+
+        <!-- 📌 Title & Experience -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Frontend Development</h3>
+        <div class="text-sm text-primary font-semibold mb-4">1 Year Experience</div>
+
+        <!-- 📄 Description -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Building responsive, interactive web applications with modern technologies and best practices. Focus on performance, accessibility, and user experience.
+        </p>
+
+        <!-- ✅ Key Skills -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-primary rounded-full"></div>
+            <span class="text-gray-700">React & Next.js</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-primary rounded-full"></div>
+            <span class="text-gray-700">TypeScript & JavaScript</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-primary rounded-full"></div>
+            <span class="text-gray-700">Tailwind CSS & SCSS</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-primary rounded-full"></div>
+            <span class="text-gray-700">API Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🎨 Product Design & UX Research Card -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+
+        <!-- 🧩 Icon box -->
+        <div class="w-16 h-16 flex items-center justify-center bg-purple-100 rounded-xl mb-6">
+          <i class="ri-palette-line text-2xl text-secondary"></i>
+        </div>
+
+        <!-- 📌 Title & Experience -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Product Design & UX Research</h3>
+        <div class="text-sm text-secondary font-semibold mb-4">3+ Years Experience</div>
+
+        <!-- 📄 Description -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Creating user-centered designs through research, prototyping, and testing. Specializing in digital products that solve real user problems.
+        </p>
+
+        <!-- ✅ Key Skills -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+            <span class="text-gray-700">User Research & Testing</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+            <span class="text-gray-700">Wireframing & Prototyping</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+            <span class="text-gray-700">Figma & Adobe Creative Suite</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+            <span class="text-gray-700">Design Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✍️ Copywriting Card -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+
+        <!-- 🧩 Icon box -->
+        <div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-xl mb-6">
+          <i class="ri-quill-pen-line text-2xl text-green-600"></i>
+        </div>
+
+        <!-- 📌 Title & Experience -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">Copywriting</h3>
+        <div class="text-sm text-green-600 font-semibold mb-4">3+ Months Experience</div>
+
+        <!-- 📄 Description -->
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          Crafting compelling copy that converts and engages. From web content to marketing campaigns, I help brands find their voice.
+        </p>
+
+        <!-- ✅ Key Skills -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+            <span class="text-gray-700">Web Copy & Content</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+            <span class="text-gray-700">Marketing Campaigns</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+            <span class="text-gray-700">Brand Voice Development</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-2 h-2 bg-green-600 rounded-full"></div>
+            <span class="text-gray-700">SEO Optimization</span>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- End of Grid -->
+  </div> <!-- End of Container -->
+</section>
+<!-- End Services Section -->
+ 
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-20 theme-aware-bg-gray"> 
+  <!-- Main container for the portfolio section with padding and background styling -->
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Responsive container with max width and horizontal padding for different screen sizes -->
+
+    <div class="text-center mb-16">
+      <!-- Centered heading and description with margin below -->
+
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Portfolio</h2>
+      <!-- Section title with large, bold text and bottom margin -->
+
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        A showcase of my work across development, design, and copywriting
+      </p>
+      <!-- Section description in muted gray color with centered layout and max width -->
+    </div>
+    <!-- End of header content (title and description) -->
+
+    <!-- Portfolio Tabs -->
+<div class="flex flex-wrap justify-center gap-2 mb-12">
+  <!-- Container for tab buttons with flexible wrapping, center alignment, spacing between tabs, and bottom margin -->
+
+  <button 
+    class="portfolio-tab active bg-primary text-white px-6 py-3 !rounded-button font-semibold whitespace-nowrap" 
+    data-tab="development">
+    <!-- Active tab button for Development Projects -->
+    <!-- Uses custom class 'portfolio-tab', primary background, white text, padding, rounded corners, and no text wrapping -->
+    Development Projects
+  </button>
+
+  <button 
+    class="portfolio-tab bg-gray-200 text-gray-700 px-6 py-3 !rounded-button font-semibold hover:bg-gray-300 transition-colors duration-200 whitespace-nowrap" 
+    data-tab="design">
+    <!-- Tab button for Design Case Studies -->
+    <!-- Styled with gray background and text, and hover transition effects -->
+    Design Case Studies
+  </button>
+
+  <button 
+    class="portfolio-tab bg-gray-200 text-gray-700 px-6 py-3 !rounded-button font-semibold hover:bg-gray-300 transition-colors duration-200 whitespace-nowrap" 
+    data-tab="writing">
+    <!-- Tab button for Writing Samples -->
+    <!-- Styled similarly to the design tab, changes background on hover -->
+    Writing Samples
+  </button>
+
+</div>
+<!-- End of Portfolio Tabs -->
+
+<!-- Development Portfolio Section -->
+<div id="development-portfolio" class="portfolio-content">
+  <!-- Container for all development-related portfolio items -->
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Responsive grid layout for portfolio cards -->
+
+    <!-- === Project 1: E-commerce Platform === -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 portfolio-item" data-project="ecommerce">
+      <!-- Individual portfolio card with hover effect and data-project attribute -->
+      
+      <img src="images/E-commerce Platform.jpg"
+        alt="E-commerce Platform"
+        class="w-full h-48 object-cover object-top">
+      <!-- Project image with fixed height and top alignment -->
+
+      <div class="p-6">
+        <!-- Card content padding -->
+
+        <h3 class="text-xl font-bold text-gray-900 mb-2">E-commerce Platform</h3>
+        <!-- Project title -->
+
+        <p class="text-gray-600 mb-4">React-based shopping platform with cart management and payment integration</p>
+        <!-- Project description -->
+
+        <div class="flex flex-wrap gap-2 mb-4">
+          <!-- Tech stack tags -->
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Stripe</span>
+        </div>
+
+        <div class="flex gap-3">
+          <!-- Action links -->
+          <a href="https://github.com" class="text-primary hover:text-blue-600 font-semibold">Live Demo</a>
+          <a href="https://github.com" class="text-gray-600 hover:text-gray-800">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- === Project 2: Analytics Dashboard === -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 portfolio-item" data-project="dashboard">
+      <img src="images/Analytics Dashboard.jpg"
+        alt="Analytics Dashboard"
+        class="w-full h-48 object-cover object-top">
+      <!-- Project image -->
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Analytics Dashboard</h3>
+        <p class="text-gray-600 mb-4">Real-time data visualization dashboard with interactive charts and filters</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">D3.js</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">API</span>
+        </div>
+        <div class="flex gap-3">
+          <a href="https://github.com" class="text-primary hover:text-blue-600 font-semibold">Live Demo</a>
+          <a href="https://github.com" class="text-gray-600 hover:text-gray-800">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- === Project 3: Portfolio Website === -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 portfolio-item" data-project="portfolio">
+      <img src="images/Portfolio Website.png"
+        alt="Portfolio Website"
+        class="w-full h-48 object-cover object-top">
+      <!-- Project image -->
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Portfolio Website</h3>
+        <p class="text-gray-600 mb-4">Responsive portfolio site with smooth animations and optimized performance</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">CSS</span>
+          <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+        </div>
+        <div class="flex gap-3">
+          <a href="https://github.com" class="text-primary hover:text-blue-600 font-semibold">Live Demo</a>
+          <a href="https://github.com" class="text-gray-600 hover:text-gray-800">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End of Development Portfolio -->
+
+<!-- Design Portfolio Section -->
+<div id="design-portfolio" class="portfolio-content hidden">
+  <!-- Hidden by default; becomes visible when Design tab is active -->
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Responsive grid layout for design project cards -->
+
+    <!-- === Project 1: FinTech Mobile App === -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 portfolio-item" data-project="mobile-app">
+      <!-- Portfolio card for a mobile app design -->
+
+      <img src="images/FinTech Mobile App.jpg"
+        alt="Mobile App Design"
+        class="w-full h-48 object-cover object-top">
+      <!-- Project thumbnail image -->
+
+      <div class="p-6">
+        <!-- Content area for the card -->
+
+        <h3 class="text-xl font-bold text-gray-900 mb-2">FinTech Mobile App</h3>
+        <!-- Project title -->
+
+        <p class="text-gray-600 mb-4">Complete UX/UI design for a personal finance management application</p>
+        <!-- Project description -->
+
+        <div class="flex flex-wrap gap-2 mb-4">
+          <!-- Tools/skills used -->
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">User Research</span>
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Prototyping</span>
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Figma</span>
+        </div>
+
+        <button class="text-primary hover:text-blue-600 font-semibold">View Case Study</button>
+        <!-- Link to detailed case study -->
+      </div>
+    </div>
+
+    <!-- === Project 2: E-learning Platform Redesign === -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 portfolio-item" data-project="web-redesign">
+      <img src="images/Website Redesign.jpg"
+        alt="Website Redesign"
+        class="w-full h-48 object-cover object-top">
+      <!-- Thumbnail for redesign project -->
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">E-learning Platform Redesign</h3>
+        <p class="text-gray-600 mb-4">Complete redesign improving user engagement by 45% and reducing bounce rate</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">A/B Testing</span>
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Analytics</span>
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Wireframing</span>
+        </div>
+        <button class="text-primary hover:text-blue-600 font-semibold">View Case Study</button>
+      </div>
+    </div>
+
+    <!-- === Project 3: Component Design System === -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 portfolio-item" data-project="design-system">
+      <img src="images/Design System.jpg"
+        alt="Design System"
+        class="w-full h-48 object-cover object-top">
+      <!-- Thumbnail for design system project -->
+
+      <div class="p-6">
+        <h3 class="text-xl font-bold text-gray-900 mb-2">Component Design System</h3>
+        <p class="text-gray-600 mb-4">Comprehensive design system for a SaaS platform with 50+ components</p>
+        <div class="flex flex-wrap gap-2 mb-4">
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Design Tokens</span>
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Documentation</span>
+          <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Storybook</span>
+        </div>
+        <button class="text-primary hover:text-blue-600 font-semibold">View Case Study</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End of Design Portfolio Section -->
+
+<!-- Writing Portfolio Section -->
+<div id="writing-portfolio" class="portfolio-content hidden">
+  <!-- Hidden by default; displayed when 'Writing Samples' tab is active -->
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Responsive grid for writing portfolio items -->
+
+    <!-- === Writing Project 1: Tech Blog Articles === -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+      <!-- Card container -->
+
+      <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-xl mb-4">
+        <i class="ri-article-line text-xl text-green-600"></i>
+      </div>
+      <!-- Icon representing blog writing -->
+
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Tech Blog Articles</h3>
+      <!-- Project title -->
+
+      <p class="text-gray-600 mb-4">Series of technical articles explaining complex concepts in simple terms</p>
+      <!-- Short description -->
+
+      <div class="flex flex-wrap gap-2 mb-4">
+        <!-- Tags showing relevant skills/tools -->
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Technical Writing</span>
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">SEO</span>
+      </div>
+
+      <div class="text-sm text-gray-500 mb-4">
+        <strong>Results:</strong> 25K+ views, 300+ shares
+      </div>
+      <!-- Impact metrics -->
+
+      <a href="#" class="text-primary hover:text-blue-600 font-semibold">Read Articles</a>
+      <!-- Link to content -->
+    </div>
+
+    <!-- === Writing Project 2: Email Campaign Series === -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+      <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-xl mb-4">
+        <i class="ri-mail-line text-xl text-green-600"></i>
+      </div>
+      <!-- Icon representing email marketing -->
+
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Email Campaign Series</h3>
+      <p class="text-gray-600 mb-4">Welcome email sequence for a B2B SaaS product with high conversion rates</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Email Marketing</span>
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Conversion</span>
+      </div>
+
+      <div class="text-sm text-gray-500 mb-4">
+        <strong>Results:</strong> 42% open rate, 18% CTR
+      </div>
+
+      <a href="#" class="text-primary hover:text-blue-600 font-semibold">View Campaign</a>
+    </div>
+
+    <!-- === Writing Project 3: Brand Voice Guidelines === -->
+    <div class="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+      <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-xl mb-4">
+        <i class="ri-megaphone-line text-xl text-green-600"></i>
+      </div>
+      <!-- Icon representing brand strategy -->
+
+      <h3 class="text-xl font-bold text-gray-900 mb-2">Brand Voice Guidelines</h3>
+      <p class="text-gray-600 mb-4">Complete brand voice and tone documentation for a lifestyle startup</p>
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Brand Strategy</span>
+        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Guidelines</span>
+      </div>
+
+      <div class="text-sm text-gray-500 mb-4">
+        <strong>Impact:</strong> Consistent messaging across all channels
+      </div>
+
+      <a href="#" class="text-primary hover:text-blue-600 font-semibold">View Guidelines</a>
+    </div>
+
+  </div>
+</div>
+<!-- End of Writing Portfolio Section -->
+
+<!-- ======================= Contact Section ======================= -->
+<section id="contact" class="py-20 theme-aware-bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- === Section Heading === -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-gray-900 mb-4">Let's Work Together</h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Ready to bring your project to life? I'd love to hear about your ideas and discuss how we can collaborate.
+      </p>
+    </div>
+
+    <!-- === Contact Grid Layout === -->
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- === Contact Info Column === -->
+      <div>
+        <h3 class="text-2xl font-bold text-gray-900 mb-6">Get In Touch</h3>
+        <div class="space-y-6">
+
+          <!-- Email Info -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-xl">
+              <i class="ri-mail-line text-xl text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+              <p class="text-gray-600">asakeolaoluwa33gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Phone Info -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-xl">
+              <i class="ri-phone-line text-xl text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+              <p class="text-gray-600">+234 916 926 4298</p>
+            </div>
+          </div>
+
+          <!-- Location Info -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-xl">
+              <i class="ri-map-pin-line text-xl text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Location</h4>
+              <p class="text-gray-600">Lagos, Nigeria</p>
+            </div>
+          </div>
+
+          <!-- Response Time Info -->
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 flex items-center justify-center bg-blue-100 rounded-xl">
+              <i class="ri-time-line text-xl text-primary"></i>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-1">Response Time</h4>
+              <p class="text-gray-600">Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- === Contact Form Column === -->
+      <div>
+        <form id="contact-form" class="space-y-6">
+
+          <!-- Name Field -->
+          <div>
+            <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Name</label>
+            <input type="text" id="name" name="name" required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-colors duration-200">
+          </div>
+
+          <!-- Email Field -->
+          <div>
+            <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email</label>
+            <input type="email" id="email" name="email" required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-colors duration-200">
+          </div>
+
+          <!-- Subject Field -->
+          <div>
+            <label for="subject" class="block text-sm font-semibold text-gray-900 mb-2">Subject</label>
+            <input type="text" id="subject" name="subject" required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-colors duration-200">
+          </div>
+
+          <!-- Message Field -->
+          <div>
+            <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+            <textarea id="message" name="message" rows="6" required
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-colors duration-200 resize-none"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit"
+            class="w-full bg-primary text-white px-8 py-4 !rounded-button font-semibold hover:bg-blue-600 transition-colors duration-200 whitespace-nowrap">
+            Send Message
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- =================== End of Contact Section =================== -->
+
+<!-- ============================ Footer ============================ -->
+<footer class="bg-gray-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- === Footer Grid Layout === -->
+    <div class="grid md:grid-cols-4 gap-8">
+
+      <!-- === About Section (Left) === -->
+      <div class="md:col-span-2">
+        <!-- Brand/Name -->
+        <div class="text-2xl font-['Pacifico'] text-primary mb-4">Olaoluwa Asake</div>
+        
+        <!-- Short Description -->
+        <p class="text-gray-400 mb-6 max-w-md">
+          Creative professional specializing in frontend development, product design, and copywriting. Let's create something amazing together.
+        </p>
+
+        <!-- Social Media Icons -->
+        <div class="flex gap-4">
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/olaoluwa-asake/" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg text-gray-400 hover:text-white hover:bg-primary transition-colors duration-200">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/CreativeOlaoulwa" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg text-gray-400 hover:text-white hover:bg-primary transition-colors duration-200">
+            <i class="ri-github-fill"></i>
+          </a>
+          <!-- Dribbble -->
+          <a href="https://dribbble.com/olaoluwa-asake" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg text-gray-400 hover:text-white hover:bg-primary transition-colors duration-200">
+            <i class="ri-dribbble-fill"></i>
+          </a>
+          <!-- Twitter/X -->
+          <a href="https://x.com/Ola_Dev_Design" class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg text-gray-400 hover:text-white hover:bg-primary transition-colors duration-200">
+            <i class="ri-twitter-fill"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- === Quick Links Column === -->
+      <div>
+        <h3 class="font-semibold text-white mb-4">Quick Links</h3>
+        <div class="space-y-2">
+          <a href="#home" class="block text-gray-400 hover:text-white transition-colors duration-200">Home</a>
+          <a href="#about" class="block text-gray-400 hover:text-white transition-colors duration-200">About</a>
+          <a href="#services" class="block text-gray-400 hover:text-white transition-colors duration-200">Services</a>
+          <a href="#portfolio" class="block text-gray-400 hover:text-white transition-colors duration-200">Portfolio</a>
+          <a href="#contact" class="block text-gray-400 hover:text-white transition-colors duration-200">Contact</a>
+        </div>
+      </div>
+
+      <!-- === Services Column === -->
+      <div>
+        <h3 class="font-semibold text-white mb-4">Services</h3>
+        <div class="space-y-2">
+          <div class="text-gray-400">Frontend Development</div>
+          <div class="text-gray-400">Product Design</div>
+          <div class="text-gray-400">UX Research</div>
+          <div class="text-gray-400">Copywriting</div>
+          <div class="text-gray-400">Brand Strategy</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- === Footer Bottom Section === -->
+    <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+
+      <!-- Copyright -->
+      <p class="text-gray-400 text-sm">
+        © 2025 Olaoluwa Asake. All rights reserved.
+      </p>
+
+      <!-- Back to Top Button -->
+      <button id="back-to-top" class="mt-4 md:mt-0 w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg text-gray-400 hover:text-white hover:bg-primary transition-colors duration-200">
+        <i class="ri-arrow-up-line"></i>
+      </button>
+
+    </div>
+
+  </div>
+</footer>
+<!-- ========================== End Footer ========================== -->
+
+<!-- ======================== Success Overlay ======================== -->
+<!-- This overlay appears after a successful form submission -->
+<div id="success-overlay" class="success-overlay">
+
+  <!-- === Success Message Box === -->
+  <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center">
+
+    <!-- Success Icon -->
+    <div class="w-16 h-16 flex items-center justify-center bg-green-100 rounded-full mx-auto mb-4">
+      <i class="ri-check-line text-2xl text-green-600"></i>
+    </div>
+
+    <!-- Success Heading -->
+    <h3 class="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
+
+    <!-- Success Message Text -->
+    <p class="text-gray-600 mb-6">
+      Thank you for submitting your request! I'll get back to you within 24 hours.
+    </p>
+
+    <!-- Close Button -->
+    <button id="close-success" class="bg-primary text-white px-6 py-3 !rounded-button font-semibold hover:bg-blue-600 transition-colors duration-200 whitespace-nowrap">
+      Close
+    </button>
+
+  </div>
+</div>
+<!-- ====================== End Success Overlay ====================== -->
+
+
+<script src="script.js"></script>
+</body>
+</html>

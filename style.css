@@ -1,0 +1,82 @@
+:root {
+--bg-primary: #ffffff;
+--text-primary: #1f2937;
+--bg-secondary: #f9fafb;
+}
+:root[data-theme="dark"] {
+--bg-primary: #1f2937;
+--text-primary: #f9fafb;
+--bg-secondary: #111827;
+}
+body {
+background-color: var(--bg-primary);
+color: var(--text-primary);
+transition: background-color 0.3s, color 0.3s;
+}
+section.theme-aware-bg-white {
+background-color: var(--bg-primary);
+}
+section.theme-aware-bg-gray {
+background-color: var(--bg-secondary);
+}
+
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+body {
+font-family: 'Inter', sans-serif;
+}
+html {
+scroll-behavior: smooth;
+}
+.hero-bg {
+background-image: url('https://readdy.ai/api/search-image?query=Modern%20minimalist%20professional%20workspace%20with%20clean%20desk%20setup%2C%20laptop%2C%20notebook%2C%20and%20soft%20natural%20lighting%20creating%20an%20inspiring%20creative%20environment%20with%20subtle%20geometric%20patterns%20and%20contemporary%20design%20elements&width=1920&height=1080&seq=hero001&orientation=landscape');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+.portfolio-modal {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+z-index: 1000;
+}
+.portfolio-modal.active {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.mb-26{
+    padding: 15% 0 ;
+}
+.success-overlay {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.8);
+z-index: 1000;
+}
+.success-overlay.active {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.mobile-menu {
+transform: translateX(-100%);
+transition: transform 0.3s ease;
+}
+.mobile-menu.active {
+transform: translateX(0);
+}
+@media (max-width: 768px) {
+.hero-bg {
+background-attachment: scroll;
+}
+}
